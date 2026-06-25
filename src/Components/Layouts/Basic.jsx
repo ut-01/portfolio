@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../../Assets/styles/Basic.css";
 import Background from '../common/Background';
 import Footer from '../Footer';
@@ -7,10 +7,10 @@ import Footer from '../Footer';
 
 export default function Basic(props) {
   const {heading, children} = props;
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const goBack = ()=>{
-    history.push("/");
+    navigate("/");
   }
 
   return (<>

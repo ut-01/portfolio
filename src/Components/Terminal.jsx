@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Assets/styles/Terminal.css';
 import { getCommandObject } from '../Services/terminal';
 
-export default class Terminal extends Component {
+class Terminal extends Component {
   state = {
     commandsHistory: [],
     currentCommand: ""
@@ -28,7 +29,7 @@ export default class Terminal extends Component {
     if (comObj.action) {
       if (comObj.action[0] === "redirect") {
         setTimeout(() =>
-          this.props.history.push(comObj.action[1])
+          this.props.navigate(comObj.action[1])
           , 500);
       }
       else if(comObj.action[0] === "open"){
@@ -92,4 +93,9 @@ export default class Terminal extends Component {
       </form>
     </div>);
   }
+}
+
+export default function TerminalWithRouter(props) {
+  const navigate = useNavigate();
+  return <Terminal {...props} navigate={navigate} />;
 }

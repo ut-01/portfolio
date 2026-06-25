@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './Assets/styles/App.css';
 import Terminal from './Components/Terminal';
 import Home from './Components/views/Home';
@@ -25,17 +25,17 @@ export default class App extends Component {
 
 		return (
 			<BrowserRouter>
-				<Route path="*" render={(props)=><NavBar toggleTerminal={this.toggleTerminal} {...props} />} />
-				{showTerminal && 
+				<NavBar toggleTerminal={this.toggleTerminal} />
+				{showTerminal &&
 					<>
-						<Route path="*" render={(props)=><Terminal toggleTerminal={this.toggleTerminal} {...props} />} />
+						<Terminal toggleTerminal={this.toggleTerminal} />
 						<div className="close-terminal-btn m-halfr p-halfr fade-appear-01 b-1r pointer" onClick={this.toggleTerminal}>&times;</div>
 					</>}
-				<Switch>
-					<Route path="/projects" exact component={Projects} />
-					<Route path="/blogs" exact component={Blogs} />
-					<Route path="/" exact component={Home} />
-				</Switch>
+				<Routes>
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/blogs" element={<Blogs />} />
+					<Route path="/" element={<Home />} />
+				</Routes>
 			</BrowserRouter>
 		);
 	}
