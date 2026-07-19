@@ -1,0 +1,85 @@
+.bg-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(160deg, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgb(190, 190, 190) 70%, rgba(255, 255, 255, 0.6) 90%, transparent);
+  z-index: -1;
+  /* filter: brightness(0.8) contrast(80%) blur(2px); */
+}
+
+.bg-fore{
+  position: absolute;
+  bottom: 20vh;
+  left: -0.5rem;
+}
+
+
+.cuboid {
+  --width: 40vw;
+  --height: 35vh;
+  --depth: 7vh;
+  height: var(--height);
+  width: var(--width);
+  position: relative;
+  transform: rotateX(310deg) rotateY(0deg) rotateZ(335deg);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  perspective-origin: right bottom;
+}
+
+.side {
+  position: absolute;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.front,
+.rear {
+  --multiplier: -0.5;
+  min-height: var(--height);
+  min-width: var(--width);
+  transform: translate3d(0, 0, calc(var(--depth) * var(--multiplier)));
+  white-space: nowrap;
+  font-size: 25vmin;
+  border-radius: 5rem;
+  color: transparent;
+  text-shadow: 0px 0px 0.8rem var(--half-dark);
+}
+
+
+.rear {
+  --multiplier: 0.5;
+  color: transparent;
+  text-shadow: 0px 0px 2.5rem var(--accent-01);
+}
+
+/*
+.left,
+.right {
+  --rotation: 90deg;
+  height: var(--height);
+  width: var(--depth);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateY(var(--rotation)) translate3d(0, 0, calc(var(--width) * -0.5));
+}
+
+.right {
+  --rotation: -90deg;
+}
+
+.top,
+.bottom {
+  --rotation: -90deg;
+  height: var(--depth);
+  width: var(--width);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateX(var(--rotation)) translate3d(0, 0, calc(var(--height) * -0.5));
+}
+
+.bottom {
+  --rotation: 90deg;
+} */

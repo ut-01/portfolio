@@ -1,0 +1,17 @@
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item{
+  width: 1.6rem;
+  margin: 1rem;
+  color: var(--white-01);
+  fill: var(--white-01);
+  transition: transform 0.4s;
+}
+
+.contact-item:hover{
+  transform: scale(1.1) rotateZ(5deg);
+}

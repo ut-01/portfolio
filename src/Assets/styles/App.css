@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+*{
+	box-sizing: border-box;
+	/* border: 1px solid var(--bg-dark); */
+}
+
+html, body{
+	--accent-01: #2e2e2e;
+	--bg-dark: #3339;
+	--half-dark: #0007;
+	--white-01: #fefefe;
+	--t-height: 30vmax;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.1rem;
+	color: var(--accent-01);
+	text-shadow: var(--text-shadow-01);
+	scroll-behavior: smooth;
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color:rgba(175, 175, 175, 0.5);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accent-01);
+  border: 1px solid var(--oppCol);
+  border-radius: 8px;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.link01{
+	margin-right: 1rem;
+	font-size: 0.8rem;
+	transition: border 0.4s;
+	background-color: var(--white-01);
+	color: var(--accent-01);
+	transition: all 0.4s;
+	padding: 0.36rem 0.64rem;
+	border-radius: 999px;
+	box-shadow: 0 0.25rem 0.5rem 0.25rem #1112;
+}
+
+.link01:hover{
+	color: var(--white-01);
+	background-color: var(--half-dark);
+}
+
+.btn{
+	padding: 0.25rem 1rem;
+}
+
+.main{
+	min-height: 80vh;
+}
+
+.icon{
+	height: 2rem;
+	width: 2rem;
+}
+
+.icon, .icon *{
+	color: var(--accent-01);
+	fill: var(--accent-01);
+	stroke: var(--accent-01);
+}
+
+.super-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.block{
+	display: block;
+}
+
+.b-1r{
+	border-radius: 1rem;
+}
+
+.b-halfr{
+	border-radius: 0.5rem;
+}
+
+.border-2{
+	border: 2px solid var(--accent-01);
+}
+
+.p-1r{
+	padding: 1rem;
+}
+
+.p-halfr{
+	padding: 0.5rem;
+}
+
+.p-halfhalfr{
+	padding: 0.25rem;
+}
+
+.max-w-half{
+	margin: auto;
+	max-width: 50%;
+}
+
+.max-w-800{
+	margin: auto;
+	max-width: 800px;
+}
+
+.max-h-half{
+	margin: auto;
+	max-height: 50%;
+}
+
+.w-80p{
+	width: 80%;
+}
+
+.m-halfr{
+	margin: 0.5rem;
+}
+
+.m-1rt{
+	margin-top: 1rem;
+}
+
+.m-1rb{
+	margin-bottom: 1rem;
+}
+
+
+.m-sap{
+	margin: 3rem auto;
+}
+
+.m-sapb{
+	margin-bottom: 3rem;
+}
+
+.m-sapt{
+	margin-top: 3rem;
+}
+
+.font-bold{
+	font-weight: bold;
+}
+
+.font-semi-bold{
+	font-weight: 600;
+}
+
+
+.cover{
+	object-fit: cover;
+}
+
+.card{
+	max-width: 540px;
+	min-height: 200px;
+	overflow: hidden;
+	margin: 0.5rem;
+	box-shadow: 0 0.25rem 0.5rem 0.25rem #00000020;
+	transform: all 0.4s;
+}
+
+.card-image{
+	max-width: 100%;
+}
+
+.card-seperator {
+	height: 2px;
+	margin: 1rem 0;
+	border-color: rgba(128, 128, 128, 0.8);
+}
+
+.card-heading{
+	margin: 0.5rem 0;
+}
+
+.card-body{
+	flex: 1;
+}
+
+.card-content{
+	display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical; 
+	margin: 0.5rem 0;
+	text-overflow: ellipsis;
+	white-space: normal;
+  overflow: hidden;
+}
+
+
+.card-tag{
+	display: inline-block;
+	font-size: 0.7rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 1rem;
+}
+
+.container-cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	overflow-x: hidden;
+	padding: 2rem 0;
+}
+
+.topics{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.topic{
+	background-color: var(--bg-dark);
+	font-size: 0.8rem;
+	margin: 1rem 0.5rem;
+	padding: 0.25rem 0.5rem;
+}
+
+.cardified{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.font-1andhalfr{
+	font-size: 1.5rem;
+}
+
+.image-loading{
+	background-image: linear-gradient(to right, #fff 30%, #ddd 50%, #fff 70%);
+	background-size: 200%;
+	animation: blink 1s infinite;
+}
+
+.container {
+  position: relative;
+}
+
+main, .fade-appear-01{
+	opacity: 0;
+	animation: fadeAppear 400ms forwards;
+}
+
+.invisible{
+	opacity: 0;
+}
+
+.op-8{
+	opacity: 0.8;
+}
+
+.op-10{
+	opacity: 1;
+}
+
+@keyframes blink{
+	0%{
+		background-position: right;
+	}
+	100%{
+		background-position: left;
+	}
+}
+
+@keyframes fadeAppear {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.glass01, .glass02{
+	/* backdrop-filter: blur(4px); */
+	background-color: rgba(200, 200, 200, 0.4);
+	background-image: linear-gradient(-45deg, rgba(250, 250, 250, 0.6), rgba(226, 226, 226, 0.5));
+	color: rgb(0,0,0,0.7);
+}
+
+.glass02{
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: linear-gradient(-45deg, rgba(40,40,40,0.6), rgba(40,40,40,0.5));
+	color: rgb(230, 230, 230);
+}

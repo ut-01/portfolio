@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
+
+  <defs>
+    <mask id="mask01">
+      <path d="M564.52 496.06L636.49 640L492.55 640L348.61 640L420.57 496.06L492.55 352.12L564.52 496.06Z" id="i6EFt6ISrX"></path>
+      <path d="M176.86 308.75L22.49 0L331.25 0L640 0L485.64 308.75L331.25 617.51L176.86 308.75Z" id="dj1qJqdE"></path>
+      <path d="M176.79 366.52L235.71 484.38L117.85 484.38L0 484.38L58.92 366.52L117.85 248.67L176.79 366.52Z" id="a1b47ZTwYn"></path>
+      <!-- <path d="M159.82 565.83L189.29 506.9L130.36 506.9L71.43 506.9L100.89 565.83L130.36 624.76L159.82 565.83Z" id="afWnZt537"></path> -->
+      <!-- <path d="M539.11 255.67L505.48 322.93L572.74 322.93L640 322.93L606.37 255.67L572.74 188.41L539.11 255.67Z" id="b42YasR4GO"></path> -->
+    </mask>
+  </defs>
+    <g><g><g><use xlink:href="#i6EFt6ISrX" opacity="1" fill="#000000" fill-opacity="1"></use></g><g><use xlink:href="#dj1qJqdE" opacity="1" fill="#000000" fill-opacity="1"></use></g><g><use xlink:href="#a1b47ZTwYn" opacity="1" fill="#000000" fill-opacity="1"></use></g><g><use xlink:href="#afWnZt537" opacity="1" fill="#000000" fill-opacity="1"></use></g><g><use xlink:href="#b42YasR4GO" opacity="1" fill="#000000" fill-opacity="1"></use></g></g></g>
+</svg>

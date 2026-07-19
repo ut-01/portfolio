@@ -1,0 +1,18 @@
+.basic-header{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-items: flex-end;
+}
+
+.back-btn{
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+  justify-self: flex-start;
+}
+
+.basic-heading{
+  font-size: 2rem;
+  font-weight: 500;
+}

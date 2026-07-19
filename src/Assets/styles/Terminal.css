@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+.terminal{
+  position: fixed;
+  background-color: #333d;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  height: var(--t-height);
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.terminal-line{
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.input-block{
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  caret-color: white;
+  color: white;
+  border: none;
+  font-family: 'Space Mono', monospace;
+}
+
+.command-response{
+  margin: 0.25rem 0;
+}
+
+.close-terminal-btn{
+  position: fixed;
+  bottom: calc( var(--t-height) - 2.5rem );
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.4);
+	color: var(--white-01);
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+  line-height: 0.8;
+  z-index: 20;
+}
+
+.close-terminal-btn:hover{
+  background-color: rgba(255, 0, 0, 0.6);
+  transition: background-color 400ms;
+}
+
+.ut-color {
+  color: #40a9ff;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.sky-blue {
+  color: skyblue;
+}
+
+.yellow-green {
+  color: yellowgreen;
+}
+
+.orange-red {
+  color: orangered;
+}
+
+.flags {
+  color: peachpuff;
+}
+
+.orchid {
+  color: orchid;
+}
+
+.custom-color1 {
+  color: #ffe44d;
+}
+
+.lime {
+  color: lime;
+}
+
+.fb-color {
+  color: #3b5998;
+}
+
+.tw-color {
+  color: #00acee;
+}
+
+.ln-color {
+  color: #0e76a8;
+}
+
+.apricot {
+  color: #F4CBB2;
+}
